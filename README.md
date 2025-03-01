@@ -1,7 +1,7 @@
 # SDSS Datathon 2025
 ## Our Team
 * Yolanda Thant - 
-* Hiya Thakkar - 
+* Hiya Thakkar - 2nd Year Undergraduate Studying Computer Science Specialist 
 * Princess Owusu - 
 * Jake Cohen - 2nd Year Undergraduate Studying Statistics and Conservation Biology
 
