@@ -27,7 +27,7 @@ def convert_size(value):
 dataset['size'] = dataset['size'].apply(convert_size)
 
 # Print the entire updated dataset
-print(dataset)
+# print(dataset)
 
 # (Optional) Save the cleaned dataset back to a CSV file
 dataset.to_csv("cleaned_real_estate_data.csv", index=False)
