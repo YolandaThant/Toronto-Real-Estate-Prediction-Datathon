@@ -1,12 +1,12 @@
 # SDSS Datathon 2025
 ## Table of Contents 📚
-1. [Introduction](#1-introduction)
-2. [Dataset](#2-our-dataset)
-3. [Initial Findings](#3-exploratory-data-analysis-and-initial-findings)
-4. [Visualizations](#4-visualizations)
-5. [Our Model](#5-our-model)
-7. [Results](#6-results)
-6. [Discussion](#7-discussion)
+1. [Introduction](#1-introduction-)
+2. [Dataset](#2-our-dataset-)
+3. [Initial Findings](#3-exploratory-data-analysis-and-initial-findings-)
+4. [Visualizations](#4-visualizations-)
+5. [Our Model](#5-our-model-)
+7. [Results](#6-results-)
+6. [Discussion](#7-discussion-)
 
 ## 1. Introduction 💡
 Real estate markets are constantly evolving, and are an interest of potential homeowners, investors, real-estate agents, and city planners. Property values are influenced by a variety of factors and grasping their relative importance is key to understanding future pricing trends. However, the market’s complexity can present significant challenges in making accurate predictions. Developing a reliable prediction model is essential for understanding these trends, enabling better decision-making for relevant parties.
@@ -68,11 +68,23 @@ print(summary)
 ```
 From this information, it seems the average property has a list price of $894k. However, it is important to observe that the range of our data is $5,390k. This is an *incredible* amount of variation, especially with regards to the IQR of $461.25k. Looking at our minimum and maximum values, it seems like our data may be right-skewed. To confirm this, we have to take a look at the distribution graphically.
 
-![image](./price_disribution.png)
+<figure>
+    <img src="./price_disribution.png"/>
+    <figcaption><strong>Fig. 1:</strong> Density histogram of price (in thousands of CAD).</figcaption>
+</figure>
 
 From this figure, we confirm that the price distribution is right-skewed. Moreover, we see that the majority of real estate properties have a price that falls within the range of $250,000 - $1,000,000. From this information, we can conclude that our previous sample mean may not be robust enough to reflect the actual mean property value.
 
 We had previously obtained a median list price of $717k. Comparing this to the [2024's Q4 average condo sale price](https://trreb.ca/market-data/condo-market-report/) in Toronto, $689,198, we see that our median is a much closer approximation to this.
+
+For some extra investigation, let's see if the distribution of prices varies across the 3 neighborhoods (wards) we examine.
+
+<figure>
+    <img src="./ward_vs_price.png"/>
+    <figcaption><strong>Fig. 2:</strong> Ward vs. price (in 1000s of CAD)</figcaption>
+</figure>
+
+It seems that real estate prices are distributed similarly across the three wards. University-Rosedale (on average) has the most expensive units, while Spadina-Fort York encompasses the unit with the highest list price. But overall, there is little discernable difference between them.
 
 ## 4. Visualizations 📊
 
