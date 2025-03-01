@@ -26,6 +26,16 @@ dataset['price'] = pd.to_numeric(dataset['price'])
 # Remove 'sqft' from 'size' column
 dataset['size'] = dataset['size'].str.replace(' sqft', '', regex=False)
 
+# Convert empty strings in 'beds' to NaN
+dataset['beds'] = dataset['beds'].replace('', pd.NA)
+
+# Check how many 'NA' values are in 'beds' column: 50. 2878 rows
+# na_beds_count = dataset['beds'].isna().sum()
+# print(f"Number of rows with NA values in 'beds' column: {na_beds_count}")
+
+# Drop rows where 'beds' is NaN
+dataset = dataset.dropna(subset=['beds'])
+
 # Function to clean and convert 'size' column
 def convert_size(value):
     if '-' in value:  # If it's a range, calculate the median
