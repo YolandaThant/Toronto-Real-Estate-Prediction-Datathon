@@ -17,6 +17,18 @@ In this project, we take a look at recent real estate trends in the city of Toro
 ### 2.1 Description
 This dataset is a simulated representation of the Toronto real estate market, designed to reflect condo sales prices listed on the Multiple Listing Service. It focuses specifically on Toronto’s downtown core, covering three wards as defined by the City of Toronto (Wards 10, 11, and 13). The data have been curated to closely resemble real-world trends and variable relationships, enabling meaningful analysis. Please see [here](https://drive.google.com/drive/u/0/folders/1Y1sOZAPeHhqiO_hwkCkz_H6BPT-WXZEU) for more information.
 
+#### 2.1.1 Relavent Fields
+* **id**: A unique 6-digit identifier for each building.
+* **ward**: The ward number the building is located in.
+    * W10 - Spadina-Fort York
+    * W11 - University-Rosedale
+    * W13 - Toronto Centre
+* **beds**: The number of bedrooms units in the building have.
+* **baths**: The number of bathrooms units in the building have.
+* **size**: The range of square footage units in the building with the given number of beds and baths have.
+* **building age**: The age (in years) of the building.
+* **price**: The listing [purchase] price of a unit in the building in CAD.
+
 ### 2.2 License
 This dataset was provided by the *Students in Data Science and Statistics* and is licensed under City of Toronto's Open Government License. For more information on license information, please visit City of Toronto's [website](https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-licence/).
 
