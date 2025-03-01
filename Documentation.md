@@ -33,6 +33,11 @@ This dataset is a simulated representation of the Toronto real estate market, de
 This dataset was provided by the *Students in Data Science and Statistics* and is licensed under City of Toronto's Open Government License. For more information on license information, please visit City of Toronto's [website](https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-licence/).
 
 ### 2.3 Preprocessing Steps
+1. In our analysis, the most important factor we are considering is the **size** (square footage) of building units. We therefore removed all entries where size was *NA*.
+2. Size was given in ranges of 500 square feet and as string values. We took the median value for each range and converted to integers.
+    * e.g. "1500-1999 sqft" becomes 1749.
+
+After processing, we were left with 2989 entries.
 
 ### 2.4 Justification
 Our dataset has 3042 entries of different residential buildings across three wards in Toronto (Spadina-Fort York, University-Rosedale, and Toronto Centre). Each entry includes information about building amenities, location, age, and price. The dataset can thus be used to examine how price varies according to such factors. Further study can be conducted by cross-referncing each building with more information about its ward's demographic, which can be found [here](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/ward-profiles/).
