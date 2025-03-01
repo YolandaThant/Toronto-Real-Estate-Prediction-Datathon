@@ -36,13 +36,37 @@ This dataset was provided by the *Students in Data Science and Statistics* and i
 1. In our analysis, the most important factor we are considering is the **size** (square footage) of building units. We therefore removed all entries where size was *NA*.
 2. Size was given in ranges of 500 square feet and as string values. We took the median value for each range and converted to integers.
     * e.g. "1500-1999 sqft" becomes 1749.
+3. Some entries did not have prices provided. We removed those entries.
+4. Of the entries that did provide prices, we divided all values by 1000 to increase readability.
 
-After processing, we were left with 2989 entries.
+After processing, we were left with 2928 entries.
 
 ### 2.4 Justification
 Our dataset has 3042 entries of different residential buildings across three wards in Toronto (Spadina-Fort York, University-Rosedale, and Toronto Centre). Each entry includes information about building amenities, location, age, and price. The dataset can thus be used to examine how price varies according to such factors. Further study can be conducted by cross-referncing each building with more information about its ward's demographic, which can be found [here](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/ward-profiles/).
 
 ## 3. Exploratory Data Analysis and Initial Findings 🔍
+Ultimately, we are interested in studying the prices of real estate units across Toronto. Let's take a look at the price distribution of buildings in our data set.
+
+We can use Python to compute some quick summary statistics:
+```
+# Load data
+df = pd.read_csv("./cleaned_real_estate_data.csv")
+
+# Summarize data 
+prices = df['price (In 1000s)']
+summary = prices.describe()
+print(summary)
+
+>>> count    2928.000000
+>>> mean      894.598702
+>>> std       560.099359
+>>> min       298.000000
+>>> 25%       551.000000
+>>> 50%       717.500000
+>>> 75%      1012.250000
+>>> max      5688.000000
+```
+From this information, it seems the average property has a list price of $894k. However, it is important to observe that the range of our data is $5,390k. This is an *incredible* amount of variation, especially with regards to the IQR of $461.25k. Looking at our minimum and maximum values, it seems like our data may be right-skewed. To confirm this, we have to take a look at the distribution graphically.
 
 ## 4. Visualizations 📊
 
