@@ -17,7 +17,7 @@ In this project, we take a look at recent real estate trends in the city of Toro
 ### 2.1 Description
 This dataset is a simulated representation of the Toronto real estate market, designed to reflect condo sales prices listed on the Multiple Listing Service. It focuses specifically on Toronto’s downtown core, covering three wards as defined by the City of Toronto (Wards 10, 11, and 13). The data have been curated to closely resemble real-world trends and variable relationships, enabling meaningful analysis. Please see [here](https://drive.google.com/drive/u/0/folders/1Y1sOZAPeHhqiO_hwkCkz_H6BPT-WXZEU) for more information.
 
-### 2.2 Licesnse
+### 2.2 License
 This dataset was provided by the *Students in Data Science and Statistics* and is licensed under City of Toronto's Open Government License. For more information on license information, please visit City of Toronto's [website](https://www.toronto.ca/city-government/data-research-maps/open-data/open-data-licence/).
 
 ### 2.3 Preprocessing Steps
