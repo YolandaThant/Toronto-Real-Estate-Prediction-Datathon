@@ -68,6 +68,12 @@ print(summary)
 ```
 From this information, it seems the average property has a list price of $894k. However, it is important to observe that the range of our data is $5,390k. This is an *incredible* amount of variation, especially with regards to the IQR of $461.25k. Looking at our minimum and maximum values, it seems like our data may be right-skewed. To confirm this, we have to take a look at the distribution graphically.
 
+![image](./price_disribution.png)
+
+From this figure, we confirm that the price distribution is right-skewed. Moreover, we see that the majority of real estate properties have a price that falls within the range of $250,000 - $1,000,000. From this information, we can conclude that our previous sample mean may not be robust enough to reflect the actual mean property value.
+
+We had previously obtained a median list price of $717k. Comparing this to the [2024's Q4 average condo sale price](https://trreb.ca/market-data/condo-market-report/) in Toronto, $689,198, we see that our median is a much closer approximation to this.
+
 ## 4. Visualizations 📊
 
 ## 5. Our Model ⚡️
