@@ -2,7 +2,7 @@
 ## Our Team
 * Yolanda Thant - 
 * Hiya Thakkar - 2nd Year Undergraduate Studying Computer Science Specialist 
-* Princess Owusu - 
+* Princess Owusu - 4th Year HBSc. Psychology Undergraduate 
 * Jake Cohen - 2nd Year Undergraduate Studying Statistics and Conservation Biology
 
 ## Introduction
