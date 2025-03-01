@@ -23,6 +23,7 @@ This dataset was provided by the *Students in Data Science and Statistics* and i
 ### 2.3 Preprocessing Steps
 
 ### 2.4 Justification
+Our dataset has 3042 entries of different residential buildings across three wards in Toronto (Spadina-Fort York, University-Rosedale, and Toronto Centre). Each entry includes information about building amenities, location, age, and price. The dataset can thus be used to examine how price varies according to such factors. Further study can be conducted by cross-referncing each building with more information about its ward's demographic, which can be found [here](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/ward-profiles/).
 
 ## 3. Exploratory Data Analysis and Initial Findings 🔍
 
