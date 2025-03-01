@@ -6,6 +6,10 @@ dataset = pd.read_csv("Real Estate/real-estate-data.csv")
 # Drop rows where 'size' is NA
 dataset = dataset.dropna(subset=['size'])
 
+# Check how many 'NA' values are in 'size' column: 53
+# na_count = dataset['size'].isna().sum()
+# print(f"Number of rows with NA values in 'size' column: {na_count}")
+
 # Remove 'sqft' from 'size' column
 dataset['size'] = dataset['size'].str.replace(' sqft', '', regex=False)
 
