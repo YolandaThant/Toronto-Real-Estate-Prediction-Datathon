@@ -1,12 +1,12 @@
 # SDSS Datathon 2025
 ## Table of Contents 📚
-1. [Introduction](#1-introduction)
-2. [Dataset](#2-our-dataset)
-3. [Initial Findings](#3-exploratory-data-analysis-and-initial-findings)
-4. [Visualizations](#4-visualizations)
-5. [Our Model](#5-our-model)
-7. [Results](#6-results)
-6. [Discussion](#7-discussion)
+1. [Introduction](#1-introduction-)
+2. [Dataset](#2-our-dataset-)
+3. [Initial Findings](#3-exploratory-data-analysis-and-initial-findings-)
+4. [Visualizations](#4-visualizations-)
+5. [Our Model](#5-our-model-)
+7. [Results](#6-results-)
+6. [Discussion](#7-discussion-)
 
 ## 1. Introduction 💡
 Real estate markets are constantly evolving, and are an interest of potential homeowners, investors, real-estate agents, and city planners. Property values are influenced by a variety of factors and grasping their relative importance is key to understanding future pricing trends. However, the market’s complexity can present significant challenges in making accurate predictions. Developing a reliable prediction model is essential for understanding these trends, enabling better decision-making for relevant parties.
