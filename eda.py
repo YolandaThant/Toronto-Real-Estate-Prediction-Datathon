@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import math
 
 
 def main():
@@ -18,7 +17,6 @@ def main():
     # 1. Look at the distribution of prices
     prices = df['price (In 1000s)']
     summary = prices.describe()
-    print(summary["75%"] - summary["25%"])
 
     # 2. Graph the distribution of prices
     # sns.set_style("white")
@@ -32,15 +30,15 @@ def main():
     # plt.show()
 
     # 3. Compare Prices Across Wards
-    sns.set_style("white")
-    sns.set_context("notebook")
-    sns.boxplot(data=df, x="ward", y="price (In 1000s)", width=0.5, fliersize=2, hue="ward", palette="rainbow", legend=False)
-    sns.despine()
-
-    plt.xticks(ticks=range(3), labels=["Toronto Centre", "Spadina-Fort York", "University-Rosedale"])
-    plt.xlabel("Ward (Neighborhood)")
-    plt.ylabel("Price (in 1000s of Dollars")
-    plt.show()
+    # sns.set_style("white")
+    # sns.set_context("notebook")
+    # sns.boxplot(data=df, x="ward", y="price (In 1000s)", width=0.5, fliersize=2, hue="ward", palette="rainbow", legend=False)
+    # sns.despine()
+    #
+    # plt.xticks(ticks=range(3), labels=["Toronto Centre", "Spadina-Fort York", "University-Rosedale"])
+    # plt.xlabel("Ward (Neighborhood)")
+    # plt.ylabel("Price (in 1000s of Dollars")
+    # plt.show()
 
 
 if __name__ == "__main__":
