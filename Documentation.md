@@ -101,7 +101,7 @@ The correlation coefficient **r ≈ 0.877** suggests a strong positive associati
 
 To visualize the price versus the number of bedrooms in a unit, we utilized a box plot to effectively compare price distributionds across different unit types. The box plot allows us to clearly observe the spread of prices, detect outliers, and identify trends in price variability across bedroom categories. By using this visualization, we can see how price distributions differ between 0, 1, 2, and 3-bedroom apartments while also highlighting the presence of extreme values. The box plot is displayed below:
 <figure>
-    <img src="./prices_vs_room.png"/>
+    <img src="./price_vs_room.png"/>
     <figcaption><strong>Fig. 4:</strong> Rooms vs. price (in 1000s of CAD)</figcaption>
 </figure>
 As expected, apartments with more bedrooms generally have higher prices, but the spread of prices also increases with the number of bedrooms. The variability in prices is particularly notable for two and three-bedroom apartments. This suggests a wider range of factors influencing pricing, such as location, amenities, or unit size. One-bedroom and studio apartments exhibit a more compact price distribution, indicating that prices for smaller units tend to be more consistent. The presence of outliers, especially for larger apartments, highlights high-end listings that significantly exceed the typical price range. The right-skewed distribution aligns with market trends in Toronto, where luxury units and penthouses drive up the upper end of the pricing spectrum.
