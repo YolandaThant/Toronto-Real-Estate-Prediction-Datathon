@@ -35,7 +35,7 @@ This dataset was provided by the *Students in Data Science and Statistics* and i
 ### 2.3 Preprocessing Steps
 1. In our analysis, the most important factor we are considering is the **size** (square footage) of building units. We therefore removed all entries where size was *NA*.
 2. Size was given in ranges of 500 square feet and as string values. We took the median value for each range and converted to integers.
-    * **e.g. "1500-1999 sqft" becomes 1749.**
+    * **e.g. "1500-1999 sqft" becomes 1750.**
 3. Some entries did not have prices provided. We removed those entries.
 4. Of the entries that did provide prices, we divided all values by 1000 to increase readability.
 
