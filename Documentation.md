@@ -103,7 +103,7 @@ To visualize the price versus the number of bedrooms in a unit, we utilized a bo
 As expected, apartments with more bedrooms generally have higher prices, but the spread of prices also increases with the number of bedrooms. The variability in prices is particularly notable for two and three-bedroom apartments. This suggests a wider range of factors influencing pricing, such as location, amenities, or unit size. One-bedroom and studio apartments exhibit a more compact price distribution, indicating that prices for smaller units tend to be more consistent. The presence of outliers, especially for larger apartments, highlights high-end listings that significantly exceed the typical price range. The right-skewed distribution aligns with market trends in Toronto, where luxury units and penthouses drive up the upper end of the pricing spectrum.
 
 ## 5. Our Model ⚡️
-In order to be able to predict the values, we decicded to use the linear regression model. The linear regression model we found is:  price = 0.80 * size + 208.81. 
+In order to be able to predict the values, we decicded to use the linear regression model. The linear regression model we found is: price_hat = 0.80 * size + 208.81. 
 This suggests that for every square foot of size, the price increases by CAD 800. The R^2 error is given as 0.77 suggesting that 77% of the price variance can be explained by the size of the house. 
 
 <figure>
@@ -132,15 +132,18 @@ Mean Squared Error (MSE): 64765.69 => RMSE = 254.5
 
 The RMSE is also higher due to the way of the dataset was provded and choosing of the sizes in each interval.
 
+
+
+## 7. Discussion 🗣️
 It is no secret that Toronto residents are facing down a massive housing crisis. According to a [TMU study](https://www.torontomu.ca/content/dam/social-innovation/Programs/Affordable_Housing_Visual_Systems_Map_Oxford.pdf), the demand for Social housing has increased 68% since 2007, while the amount available has remained largely unchanged. Through our investigation, we have highlighted the incredible diversity of prices real estate properties. And yet, it is obvious that most units skew to the more expensive end. For those struggling to find housing, the question thus remains: what can be done? Has the gentrification of Toronto's neighborhoods gone too far?
 
 Other parties that may be interested in trends in real estate prices may include investors, government bodies, and home owners. With regards to investors, there is the expected trend that larger units with more bedrooms are more valuable. However, it is important to consider whether the prohibitive cost of some of these larger units may make selling them more difficult. This information is also pertinent for home buyers, who can use it to investigate what kinds of units are in their price range.
 
 The information about how prices vary across neighborhoods may be useful for the government. They can determine property tax rates for housing based on the projected valuation of real estate properties by neighborhood.
-
-## 7. Discussion 🗣️
   
 The densely packed vertical clusters suggests varying prices for the same size indicating the influence of other variables such as location, age of property etc. Businesses and investors can use this information to price properties competitively based on market trends. They could target different customer segments based on these price patterns such as the central 50% of the price is in the range 551000 to 1681000 CAD which is the main market segment. 
 The varying price can also be indicative of a volatile market suggesting that investors should analyze whether these outliers are justifies by other property features before moving forward. Some of the high-price outliers indicate luxury properties which could be potential negotiation oppurtunities. 
+
+
 
 
