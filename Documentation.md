@@ -39,7 +39,7 @@ This dataset was provided by the *Students in Data Science and Statistics* and i
 3. Some entries did not have prices provided. We removed those entries.
 4. Of the entries that did provide prices, we divided all values by 1000 to increase readability.
 
-After processing, we were left with 2928 entries.
+After processing, we were left with 2870 entries.
 
 ### 2.4 Justification
 Our dataset has 3042 entries of different residential buildings across three wards in Toronto (Spadina-Fort York, University-Rosedale, and Toronto Centre). Each entry includes information about building amenities, location, age, and price. The dataset can thus be used to examine how price varies according to such factors. Further study can be conducted by cross-referncing each building with more information about its ward's demographic, which can be found [here](https://www.toronto.ca/city-government/data-research-maps/neighbourhoods-communities/ward-profiles/).
