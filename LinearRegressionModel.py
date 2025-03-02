@@ -6,10 +6,10 @@ from sklearn.linear_model import LinearRegression
 # read the data from the dataset
 data = pd.read_csv("cleaned_real_estate_data.csv")
 
-# make it into a dataframe
-df = pd.DataFrame(data)
 
-x = df[['size']]
+df = data.dropna(subset=['size', 'price (In 1000s)'])
+
+x = df['size'].values.reshape(-1, 1)
 y = df['price (In 1000s)']
 
 model = LinearRegression()
