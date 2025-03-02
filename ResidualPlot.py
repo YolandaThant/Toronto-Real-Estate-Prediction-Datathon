@@ -29,7 +29,7 @@ residuals = y - y_hat
 
 # Plotting the residuals
 plt.figure(figsize=(8, 5))
-plt.scatter(y_hat, residuals, color='limegreen', alpha=0.2)
+plt.scatter(y_hat, residuals, color='limegreen')
 plt.axhline(y=0, color='red', linestyle='--', linewidth=2)
 plt.xlabel("Predicted Price (In Thousands CAD) in y_hat")
 plt.ylabel("Residual in (y - y_hat)")

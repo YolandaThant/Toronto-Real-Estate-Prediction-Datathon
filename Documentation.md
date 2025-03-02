@@ -99,6 +99,12 @@ The marginal distribution also provide insights into the individual variables. T
 In order to be able to predict the values, we decicded to use the linear regression model. The linear regression model we found is:  price = 0.80 * size + 208.81. 
 This suggests that for every square foot of size, the price increases by CAD 800. The R^2 error is given as 0.77 suggesting that 77% of the price variance can be explained by the size of the house. 
 
+<figure>
+    <img src="./residual_plot.png"/>
+    <figcaption><strong>Fig. 1:</strong> Residual Plot for Prediction vs Housing Prices (In Thousands CAD).</figcaption>
+</figure>
+From the underlying residual plot, although the variance (vertical spread) increases as the fitted values (predicted values) increase, there appears to be no convex or concave curve shape in this plot. This indicates the points are (sort of) randomly spread out, and that a linear regression model does a good job of fitting the data.
+With that being said, a possible reason to why the variance (vertical spread) increases is because of the way **the dataset was given to us**: size of housing was in intervals. Thus, we decided to pick a size from the interval, which is by the median of each interval.
 
 ## 6. Results ❗️
  
