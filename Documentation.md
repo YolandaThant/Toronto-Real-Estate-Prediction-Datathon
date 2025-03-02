@@ -114,7 +114,11 @@ From the underlying residual plot, although the variance (vertical spread) incre
 With that being said, a possible reason to why the variance (vertical spread) increases is because of the way **the dataset was given to us**: size of housing was in intervals. Thus, we decided to pick a size from the interval, which is by the median of each interval.
 
 ## 6. Results ❗️
+It is no secret that Toronto residents are facing down a massive housing crisis. According to a [TMU study](https://www.torontomu.ca/content/dam/social-innovation/Programs/Affordable_Housing_Visual_Systems_Map_Oxford.pdf), the demand for Social housing has increased 68% since 2007, while the amount available has remained largely unchanged. Through our investigation, we have highlighted the incredible diversity of prices real estate properties. And yet, it is obvious that most units skew to the more expensive end. For those struggling to find housing, the question thus remains: what can be done? Has the gentrification of Toronto's neighborhoods gone too far?
 
+Other parties that may be interested in trends in real estate prices may include investors, government bodies, and home owners. With regards to investors, there is the expected trend that larger units with more bedrooms are more valuable. However, it is important to consider whether the prohibitive cost of some of these larger units may make selling them more difficult. This information is also pertinent for home buyers, who can use it to investigate what kinds of units are in their price range.
+
+The information about how prices vary across neighborhoods may be useful for the government. They can determine property tax rates for housing based on the projected valuation of real estate properties by neighborhood.
 
 ## 7. Discussion 🗣️
 We also split the dataset into 80% training data and 20% testing data to see check if the model predicts the prices correctly. However becasue we have divided our size as the median of the different intervals, the prices for a particular size is variable resulting in large differences betweent he actual and predicted values and in fact this is also the reason for repeated predicted values as shows below
