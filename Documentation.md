@@ -69,7 +69,7 @@ print(summary)
 From this information, it seems the average property has a list price of $894k. However, it is important to observe that the range of our data is $5,390k. This is an *incredible* amount of variation, especially with regards to the IQR of $461.25k. Looking at our minimum and maximum values, it seems like our data may be right-skewed. To confirm this, we have to take a look at the distribution graphically.
 
 <figure>
-    <img src="./price_disribution.png"/>
+    <img src="./price_density.png"/>
     <figcaption><strong>Fig. 1:</strong> Density histogram of price (in thousands of CAD).</figcaption>
 </figure>
 

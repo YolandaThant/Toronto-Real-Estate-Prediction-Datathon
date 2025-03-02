@@ -26,19 +26,21 @@ def main():
     # sns.despine()
     #
     # plt.xlabel("Price (in 1000s of Dollars)")
+    # plt.title("Real Estate Prices")
     # plt.ylabel("Density")
     # plt.show()
 
     # 3. Compare Prices Across Wards
-    # sns.set_style("white")
-    # sns.set_context("notebook")
-    # sns.boxplot(data=df, x="ward", y="price (In 1000s)", width=0.5, fliersize=2, hue="ward", palette="rainbow", legend=False)
-    # sns.despine()
-    #
-    # plt.xticks(ticks=range(3), labels=["Toronto Centre", "Spadina-Fort York", "University-Rosedale"])
-    # plt.xlabel("Ward (Neighborhood)")
-    # plt.ylabel("Price (in 1000s of Dollars")
-    # plt.show()
+    sns.set_style("white")
+    sns.set_context("notebook")
+    sns.boxplot(data=df, x="ward", y="price (In 1000s)", width=0.5, fliersize=2, hue="ward", palette="rainbow", legend=False)
+    sns.despine()
+
+    plt.xticks(ticks=range(3), labels=["Toronto Centre", "Spadina-Fort York", "University-Rosedale"])
+    plt.title("How Real Estate Prices Vary Across Neighborhoods")
+    plt.xlabel("Ward (Neighborhood)")
+    plt.ylabel("Price (in 1000s of Dollars")
+    plt.show()
 
 
 if __name__ == "__main__":
