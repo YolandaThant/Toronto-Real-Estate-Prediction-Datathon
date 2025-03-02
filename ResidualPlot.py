@@ -33,6 +33,6 @@ plt.scatter(y_hat, residuals, color='limegreen', alpha=0.2)
 plt.axhline(y=0, color='red', linestyle='--', linewidth=2)
 plt.xlabel("Predicted Price (In Thousands CAD) in y_hat")
 plt.ylabel("Residual in (y - y_hat)")
-plt.title("Residual Plot of Prediction vs Housing Prices (In Thousands)")
+plt.title("Residual Plot of Prediction vs Housing Prices (In Thousands CAD)")
 
 plt.show()
