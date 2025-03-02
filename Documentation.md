@@ -95,6 +95,13 @@ For the visualization of the price against the size of an aprtment, we decided t
 The joint plot shows a linear positive moderation correlation between the size of the house and the price which makes sense as the price is likely to be higher for a bigger house. It can be seen through the figure that as the size of the apartment increases, the data points seem to gradually grow apart suggesting that for apratments that are bigger in size, the prices are more variable compared to smaller apartments whose prices are more similar. A possible analysis for the variable proces could be due to the heighbourhood that the apartments are in or the amenities provided. 
 The marginal distribution also provide insights into the individual variables. The sizes of the houses show a right skewed distributions suggesting that many of the houses have smaller sizes with an average of 589 square feet, this would mean that most the apartments are within the range of 500-999 which is accurate as Toronto mostly has skyscrappers thereby the explaining the right skewed distribution.
 
+To visualize the price versus the number of bedrooms in a unit, we utilized a box plot to effectively compare price distributionds across different unit types. The box plot allows us to clearly observe the spread of prices, detect outliers, and identify trends in price variability across bedroom categories. By using this visualization, we can see how price distributions differ between 0, 1, 2, and 3-bedroom apartments while also highlighting the presence of extreme values. The box plot is displayed below:
+<figure>
+    <img src="./prices_vs_room.png"/>
+    <figcaption><strong>Fig. 4:</strong> Rooms vs. price (in 1000s of CAD)</figcaption>
+</figure>
+As expected, apartments with more bedrooms generally have higher prices, but the spread of prices also increases with the number of bedrooms. The variability in prices is particularly notable for two and three-bedroom apartments. This suggests a wider range of factors influencing pricing, such as location, amenities, or unit size. One-bedroom and studio apartments exhibit a more compact price distribution, indicating that prices for smaller units tend to be more consistent. The presence of outliers, especially for larger apartments, highlights high-end listings that significantly exceed the typical price range. The right-skewed distribution aligns with market trends in Toronto, where luxury units and penthouses drive up the upper end of the pricing spectrum.
+
 ## 5. Our Model ⚡️
 In order to be able to predict the values, we decicded to use the linear regression model. The linear regression model we found is:  price = 0.80 * size + 208.81. 
 This suggests that for every square foot of size, the price increases by CAD 800. The R^2 error is given as 0.77 suggesting that 77% of the price variance can be explained by the size of the house. 
@@ -110,7 +117,7 @@ With that being said, a possible reason to why the variance (vertical spread) in
  
 
 ## 7. Discussion 🗣️
-We also split the dataset into 80% training data dn 20% testing data to see check if the model predicts the prices correctly. However becasue we have divided our size as the median of the different intervals, the prices for a particular size is variable resulting in large differences betweent he actual and predicted values and in fact this is also the reason for repeated predicted values as shows below
+We also split the dataset into 80% training data and 20% testing data to see check if the model predicts the prices correctly. However becasue we have divided our size as the median of the different intervals, the prices for a particular size is variable resulting in large differences betweent he actual and predicted values and in fact this is also the reason for repeated predicted values as shows below
 Predicted values vs Actual values:
 Predicted: 808.94, Actual: 930.00
 Predicted: 1209.55, Actual: 875.00
