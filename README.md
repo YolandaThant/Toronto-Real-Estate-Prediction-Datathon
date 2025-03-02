@@ -1,9 +1,9 @@
 # SDSS Datathon 2025
 ## Our Team
-* Yolanda Thant - 
-* Hiya Thakkar - 2nd Year Undergraduate Studying Computer Science Specialist 
+* Yolanda Thant - 2nd Year, Computer Science Specialist & Statistics Major
+* Hiya Thakkar - 2nd Year, Computer Science Specialist 
 * Princess Owusu - 4th Year HBSc. Psychology Undergraduate 
-* Jake Cohen - 2nd Year Undergraduate Studying Statistics and Conservation Biology
+* Jake Cohen - 2nd Year, Statistics & Conservation Biology
 
 ## Introduction
 Real estate markets are constantly evolving, and are an interest of potential homeowners, investors, real-estate agents, and city planners. Property values are influenced by a variety of factors and grasping their relative importance is key to understanding future pricing trends. However, the market’s complexity can present significant challenges in making accurate predictions. Developing a reliable prediction model is essential for understanding these trends, enabling better decision-making for relevant parties.
