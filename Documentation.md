@@ -92,6 +92,8 @@ For the visualization of the price against the size of an aprtment, we decided t
     <img src="./joint_plot.png"/>
     <figcaption><strong>Fig. 3:</strong> Size vs. price (in 1000s of CAD)</figcaption>
 </figure>
+The joint plot shows a linear positive moderation correlation between the size of the house and the price which makes sense as the price is likely to be higher for a bigger house. It can be seen through the figure that as the size of the apartment increases, the data points seem to gradually grow apart suggesting that for apratments that are bigger in size, the prices are more variable compared to smaller apartments whose prices are more similar. A possible analysis for the variable proces could be due to the heighbourhood that the apartments are in or the amenities provided. 
+The marginal distribution also provide insights into the individual variables. The sizes of the houses show a right skewed distributions suggesting that many of the houses have smaller sizes with an average of 589 square feet, this would mean that most the apartments are within the range of 500-999 which is accurate as Toronto mostly has skyscrappers thereby the explaining the right skewed distribution.
 
 ## 5. Our Model ⚡️
 In order to be able to predict the values, we decicded to use the linear regression model. The linear regression model we found is:  price = 0.80 * size + 208.81. 
@@ -99,8 +101,7 @@ This suggests that for every square foot of size, the price increases by CAD 800
 
 
 ## 6. Results ❗️
-The joint plot shows a linear positive moderation correlation between the size of the house and the price which makes sense as the price is likely to be higher for a bigger house. It can be seen through the figure that as the size of the apartment increases, the data points seem to gradually grow apart suggesting that for apratments that are bigger in size, the prices are more variable compared to smaller apartments whose prices are more similar. A possible analysis for the variable proces could be due to the heighbourhood that the apartments are in or the amenities provided. 
-The marginal distribution also provide insights into the individual variables. The sizes of the houses show a right skewed distributions suggesting that many of the houses have smaller sizes with an average of 589 square feet, this would mean that most the apartments are within the range of 500-999 which is accurate as Toronto mostly has skyscrappers thereby the explaining the right skewed distribution. 
+ 
 
 ## 7. Discussion 🗣️
 We also split the dataset into 80% training data dn 20% testing data to see check if the model predicts the prices correctly. However becasue we have divided our size as the median of the different intervals, the prices for a particular size is variable resulting in large differences betweent he actual and predicted values and in fact this is also the reason for repeated predicted values as shows below
