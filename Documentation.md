@@ -87,9 +87,36 @@ For some extra investigation, let's see if the distribution of prices varies acr
 It seems that real estate prices are distributed similarly across the three wards. University-Rosedale (on average) has the most expensive units, while Spadina-Fort York encompasses the unit with the highest list price. But overall, there is little discernable difference between them.
 
 ## 4. Visualizations 📊
+For the visualization of the price against the size of an aprtment, we decided to use a joint plot to clearly see the relationship between the two variables while also seeing the marginal distributions. The joint plot is displayed below: 
+<figure>
+    <img src="./joint_plot.png"/>
+    <figcaption><strong>Fig. 3:</strong> Size vs. price (in 1000s of CAD)</figcaption>
+</figure>
 
 ## 5. Our Model ⚡️
+In order to be able to predict the values, we decicded to use the linear regression model. The linear regression model we found is:  price = 0.80 * size + 208.81. 
+This suggests that for every square foot of size, the price increases by CAD 800. The R^2 error is given as 0.77 suggesting that 77% of the price variance can be explained by the size of the house. 
+
 
 ## 6. Results ❗️
+The joint plot shows a linear positive moderation correlation between the size of the house and the price which makes sense as the price is likely to be higher for a bigger house. It can be seen through the figure that as the size of the apartment increases, the data points seem to gradually grow apart suggesting that for apratments that are bigger in size, the prices are more variable compared to smaller apartments whose prices are more similar. A possible analysis for the variable proces could be due to the heighbourhood that the apartments are in or the amenities provided. 
+The marginal distribution also provide insights into the individual variables. The sizes of the houses show a right skewed distributions suggesting that many of the houses have smaller sizes with an average of 589 square feet, this would mean that most the apartments are within the range of 500-999 which is accurate as Toronto mostly has skyscrappers thereby the explaining the right skewed distribution. 
 
 ## 7. Discussion 🗣️
+We also split the dataset into 80% training data dn 20% testing data to see check if the model predicts the prices correctly. However becasue we have divided our size as the median of the different intervals, the prices for a particular size is variable resulting in large differences betweent he actual and predicted values and in fact this is also the reason for repeated predicted values as shows below
+Predicted values vs Actual values:
+Predicted: 808.94, Actual: 930.00
+Predicted: 1209.55, Actual: 875.00
+Predicted: 808.94, Actual: 594.00
+Predicted: 808.94, Actual: 1143.00
+Predicted: 1209.55, Actual: 904.00
+Predicted: 1209.55, Actual: 1259.00
+Predicted: 408.32, Actual: 429.00
+Predicted: 1209.55, Actual: 967.00
+Predicted: 808.94, Actual: 573.00
+Predicted: 1209.55, Actual: 679.00
+Predicted: 808.94, Actual: 611.00
+Predicted: 808.94, Actual: 749.00 
+Mean Squared Error (MSE): 64765.69 => RMSE = 254.5
+
+The RMSE is also higher due to the way of the dataset was provded and choosing of the sizes in each interval.  
