@@ -56,4 +56,3 @@ dataset['price (In 1000s)'] = (dataset['price (In 1000s)'] / 1000).astype(int)
 
 # (Optional) Save the cleaned dataset back to a CSV file
 dataset.to_csv("cleaned_real_estate_data.csv", index=False)
-
