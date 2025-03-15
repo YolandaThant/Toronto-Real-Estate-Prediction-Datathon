@@ -69,7 +69,7 @@ print(summary)
 From this information, it seems the average property has a list price of $894k. However, it is important to observe that the range of our data is $5,390k. This is an *incredible* amount of variation, especially with regards to the IQR of $461.25k. Looking at our minimum and maximum values, it seems like our data may be right-skewed. To confirm this, we have to take a look at the distribution graphically.
 
 <figure>
-    <img src="./price_density.png"/>
+    <img src="./Data Visualizations/price_density.png"/>
     <figcaption><strong>Fig. 1:</strong> Density histogram of price (in thousands of CAD).</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ We had previously obtained a median list price of $717k. Comparing this to the [
 For some extra investigation, let's see if the distribution of prices varies across the 3 neighborhoods (wards) we examine.
 
 <figure>
-    <img src="./ward_vs_price.png"/>
+    <img src="./Data Visualizations/ward_vs_price.png"/>
     <figcaption><strong>Fig. 2:</strong> Ward vs. price (in 1000s of CAD)</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ It seems that real estate prices are distributed similarly across the three ward
 ## 4. Visualizations 📊
 For the visualization of the price against the size of an aprtment, we decided to use a joint plot to clearly see the relationship between the two variables while also seeing the marginal distributions. The joint plot is displayed below: 
 <figure>
-    <img src="./joint_plot.png"/>
+    <img src="./Data Visualizations/joint_plot.png"/>
     <figcaption><strong>Fig. 3:</strong> Size vs. price (in 1000s of CAD)</figcaption>
 </figure>
 The joint plot shows a strong, positive linear association between the size of the house and the price which makes sense as the price is likely to be higher for a bigger house. It can be seen through the figure that as the size of the apartment increases, the data points seem to gradually grow apart suggesting that for apartments that are bigger in size, the prices are more variable compared to smaller apartments whose prices are more similar. A possible analysis for the variable prices could be due to the neighbourhood that the apartments are in or the amenities provided. 
@@ -101,7 +101,7 @@ The correlation coefficient **r ≈ 0.877** suggests a strong positive associati
 
 To visualize the price versus the number of bedrooms in a unit, we utilized a box plot to effectively compare price distributionds across different unit types. The box plot allows us to clearly observe the spread of prices, detect outliers, and identify trends in price variability across bedroom categories. By using this visualization, we can see how price distributions differ between 0, 1, 2, and 3-bedroom apartments while also highlighting the presence of extreme values. The box plot is displayed below:
 <figure>
-    <img src="./price_vs_room.png"/>
+    <img src="./Data Visualizations/price_vs_room.png"/>
     <figcaption><strong>Fig. 4:</strong> Rooms vs. price (in 1000s of CAD)</figcaption>
 </figure>
 As expected, apartments with more bedrooms generally have higher prices, but the spread of prices also increases with the number of bedrooms. The variability in prices is particularly notable for two and three-bedroom apartments. This suggests a wider range of factors influencing pricing, such as location, amenities, or unit size. One-bedroom and studio apartments exhibit a more compact price distribution, indicating that prices for smaller units tend to be more consistent. The presence of outliers, especially for larger apartments, highlights high-end listings that significantly exceed the typical price range. The right-skewed distribution aligns with market trends in Toronto, where luxury units and penthouses drive up the upper end of the pricing spectrum.
@@ -111,7 +111,7 @@ In order to be able to predict the values, we decicded to use the linear regress
 This suggests that for every square foot of size, the price increases by CAD 800.
 
 <figure>
-    <img src="./residual_plot.png"/>
+    <img src="./Data Visualizations/residual_plot.png"/>
     <figcaption><strong>Fig. 1:</strong> Residual Plot for Prediction vs Housing Prices (In Thousands CAD).</figcaption>
 </figure>
 From the underlying residual plot, although the variance (vertical spread) increases as the fitted values (predicted values) increase, there appears to be no convex or concave curve shape in this plot. This indicates the points are (sort of) randomly spread out, and that a linear regression model does a good job of fitting the data.
